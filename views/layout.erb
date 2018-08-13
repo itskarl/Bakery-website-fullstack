@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100|Fredericka+the+Great|Lobster" rel="stylesheet">
+
+    <title>A Friend in Knead</title>
+
+  </head>
+
+  <body>
+
+    <div class="menubar">
+      <div class="odd">
+        <p></p>
+      </div>
+      <div class="even">
+        <p></p>
+      </div>
+      <div class="odd">
+        <p></p>
+      </div>
+      <div class="even">
+        <p></p>
+      </div>
+      <div class="odd">
+        <p></p>
+      </div>
+      <div class="even">
+        <p></p>
+      </div>
+      <a href="/">
+        <div class="odd">
+          <p>HOME
+          </p>
+        </div>
+      </a>
+      <a href="/about">
+        <div class="even">
+          <p>ABOUT</p>
+        </div>
+      </a>
+      <a href="">
+        <div class="odd" id="myBtn">
+          <p>PRODUCTS</p>
+        </div>
+      </a>
+      <a href="/contact">
+        <div class="even">
+          <p>CONTACT
+          </p>
+        </div>
+      </a>
+
+    </div>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Some text in the Modal..</p>
+      </div>
+    </div>
+
+    <div class="allcontent">
+
+      <div class="row">
+        <div class="shopname">
+          <h1>
+            A Friend In Knead
+          </h1>
+        </div>
+      </div>
+
+      <%= yield%>
+
+    </div>
+
+    <footer class="footer">FOOTER</footer>
+    <script src="main.js"></script>
+  </body>
+
+</html>

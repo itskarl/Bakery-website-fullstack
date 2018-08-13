@@ -1,0 +1,155 @@
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: pink;
+  /* background: linear-gradient(rgba(208, 180, 204, .4), rgba(140, 157, 230, 0.4));
+  background-position: left;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat; */
+  height: 100%;
+}
+
+
+
+footer {
+  margin-top: 4em;
+  text-align: right;
+  font-size: .8em;
+}
+
+.menubar {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.menubar a {
+    text-decoration:none;
+    color: white;
+}
+
+.menubar div {
+  width: 150px;
+  background-color: pink;
+  height: 80px;
+  border-radius: 0 0 150px 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 0 20px 0;
+  border-style: solid;
+  border-width: 20px 0 0 0;
+  border-color: rgb(242, 159, 174);
+  box-shadow: 0px 5px 0px rgba(0, 0, 0, .3);
+  transition-duration: .5s;
+}
+
+.odd {
+  border-color: rgb(211, 86, 149) !important;
+  background-color: hotpink !important;
+}
+
+.menubar div:hover {
+  height: 100px;
+  transition-duration: .5s;
+  text-decoration: overline;
+  color: rgb(255, 254, 142);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+
+.shopname {
+  margin-top: 80px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 1.6em;
+  font-family: 'Lobster', cursive;
+  height: 3.6em;
+}
+
+.allcontent {
+  min-height: calc(100vh - 140px);
+  padding: 40px 40px 0 40px;
+}
+
+.maincontent {
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  font-size: 1.2em;
+  color: pink;
+}
+
+.footer {
+  height: 50px;
+  background-color: pink;
+}
+
+.board {
+  background: url('images/board.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-8deg);
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 1.8em;
+  width: 360px;
+  height: 240px;
+  color: ivory;
+  padding:30px;
+  padding: 0 20px 20px 20px;
+  box-sizing:border-box
+}
+
+/*
+MODAL */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
