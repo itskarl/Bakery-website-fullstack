@@ -7,16 +7,14 @@ body {
   font-family: 'Raleway', sans-serif;
   margin: 0;
   padding: 0;
-  color: pink;
-  /* background: linear-gradient(rgba(208, 180, 204, .4), rgba(140, 157, 230, 0.4));
+  color: rgb(62, 45, 33);
+  background: linear-gradient( rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('images/bricks.jpg');
   background-position: left;
   background-attachment: fixed;
   background-size: cover;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   height: 100%;
 }
-
-
 
 footer {
   margin-top: 4em;
@@ -32,8 +30,8 @@ footer {
 }
 
 .menubar a {
-    text-decoration:none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .menubar div {
@@ -72,9 +70,9 @@ footer {
 
 .shopname {
   margin-top: 80px;
-  color: white;
+  color: hotpink;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   font-size: 1.6em;
   font-family: 'Lobster', cursive;
   height: 3.6em;
@@ -89,12 +87,12 @@ footer {
   display: grid;
   grid-template-columns: 4fr 8fr;
   font-size: 1.2em;
-  color: pink;
+  color: rgb(62, 45, 33);
 }
 
 .footer {
   height: 50px;
-  background-color: pink;
+  background-color: hotpink;
 }
 
 .board {
@@ -110,46 +108,100 @@ footer {
   width: 360px;
   height: 240px;
   color: ivory;
-  padding:30px;
+  padding: 30px;
   padding: 0 20px 20px 20px;
-  box-sizing:border-box
+  box-sizing: border-box
 }
 
 /*
 MODAL */
 
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
 }
 
 .modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
+  width: 50%;
+  width: 150px;
+  position: absolute;
+  right: 150px;
+  top: 130px;
 }
 
-.close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+.productbtn {
+  width: 150px;
+  border-radius: 50%;
+  background-color: rgba(233, 240, 176, 0.9);
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px
 }
 
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
+.productgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.productgrid img {
+  width: 100%;
+  border-style: dashed;
+  border-color: white;
+  border-width: 8px;
+}
+
+.productgrid div {
+  margin: 20px;
+  padding: 20px;
+}
+
+button {
+  height: 30px;
+  background-color: rgba(130, 242, 121, .5);
+  border-style: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: rgba(130, 242, 121, .9);
+}
+
+.eventgrid {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 20px;
+  grid-gap: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 500px;
+  max-height: 70%;
+  border-top-style: solid;
+  border-top-color: rgb(242, 159, 174);
+  border-top-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(242, 159, 174);
+  border-bottom-width: 5px;
+}
+
+.eventgrid div {
+  max-width: 500px;
+}
+
+.eventgrid img {}
+
+.invis {
+opacity: 0
 }

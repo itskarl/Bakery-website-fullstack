@@ -12,9 +12,30 @@
           </div>
         </div>
         <div class="right">
-          <p>RIGHT</p>
-          <p> At A Friend in Need, we bring you the best products. Please en </p>
-          <p> Subscribe to get our latest list of products! </p>
+          <p> Welcome to a A Friend in Knead, New York's hottest bakery. We've got everything. </p>
+          <p> We're at every New York City local events, so stop by and say hello!. Find one near you!</p>
+
+          <div class="eventgrid">
+
+
+          <% @req['events'].each do |i| %>
+            <div>
+
+                <img src="<%= i['logo']['url'] %>"> <br>
+                <h2><%= i['name']['text'] %>
+
+                <br>
+
+              <p><a href="<%= i['url'] %>">JOIN</a></p>
+              <%= i['description']['text']%>
+            </div>
+          <% end %>
+
         </div>
+
+        </div>
+
+
+
       </div>
     </div>
