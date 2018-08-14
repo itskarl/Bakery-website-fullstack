@@ -24,6 +24,25 @@ get '/contact' do
 end
 
 get '/muffins' do
+  $muffins = []
+  class Muffin
+    attr_accessor :name, :price, :img, :description
+    def initialize(name,price,img,description)
+      @name = name
+      @price = price
+      @img = img
+      @description = description
+      $muffins<< self
+    end
+  end
+
+  muffin1 = Muffin.new("It Ain't Easy Being Green", "$7.99", "images/muffin1.png", "Our pitaschio-flavored will turn heads and tastebuds.")
+  muffin2 = Muffin.new("Oatmeal", "$7.99", "images/muffin2.png", "Don't its simple exterior fool you. This packs a flavor kick in each bite!")
+  muffin3 = Muffin.new("Double Chocolate", "$7.99", "images/muffin3.png", "For our chocoholics.")
+  muffin4 = Muffin.new("Carrot","$7.99", "images/muffin4.png", "We can even make vegetables taste good.")
+  muffin5 = Muffin.new("Peanut Butter", "$7.99", "images/muffin5.png", "Goes great with jelly!")
+  muffin6 = Muffin.new("Corn", "$7.99", "images/muffin6.png", "Like a bowl of cereal in each bite!")
+
   erb :muffins
 end
 
@@ -40,11 +59,11 @@ get '/cookies' do
     end
   end
 
-  cookie1 = Cookie.new("Cheesecake", "$39.99", "images/cookie1.png", "Rich and creamy. Our famous traditional cheesecake is a crowd pleaser.")
-  cookie2 = Cookie.new("Cookies and Cream", "$39.99", "images/cookie2.png", "Rich and creamy. Our famous traditional cheesecake is a crowd pleaser.")
-  cookie3 = Cookie.new("Apple Cinnamon", "$39.99", "images/cookie3.png", "Rich and creamy. Our famous traditional cheesecake is a crowd pleaser.")
-  cookie4 = Cookie.new("When Life Gives You Lemons","$39.99", "images/cookie4.png", "Rich and creamy. Our famous traditional cheesecake is a crowd pleaser.")
-  cookie5 = Cookie.new("Fruitcake Bonanza", "$39.99", "images/cookie5.png", "Rich and creamy. Our famous traditional cheesecake is a crowd pleaser.")
+  cookie1 = Cookie.new("Better Chocolate than Never", "$5.99", "images/cookie1.png", "A classic flavor and our founder's favorite!")
+  cookie2 = Cookie.new("Double Chocolate", "$5.99", "images/cookie2.png", "Twice the chocolate. Twice the fun.")
+  cookie3 = Cookie.new("Confetti", "$5.99", "images/cookie3.png", "Enjoy the flavor of a funfetti birthday cake in a cookie!")
+  cookie4 = Cookie.new("The Last Strawberry","$5.99", "images/cookie4.png", "Satisfy your sweet tooth with one of our most popular selections")
+  cookie5 = Cookie.new("You Butter Believe", "$5.99", "images/cookie5.png", "Indulge in our rich and chewy butter cookies. It doesn't get butter than this!")
   erb :cookies
 end
 
@@ -61,10 +80,10 @@ get '/cakes' do
     end
   end
 
-  cake1 = Cake.new("Cheesecake", "$39.99", "images/cake1.png", "Rich and creamy. Our famous traditional cheesecake is a crowd pleaser.")
-  cake2 = Cake.new("Cookies and Cream", "$39.99", "images/cake2.png", "Rich and creamy. Our famous traditional cheesecake is a crowd pleaser.")
-  cake3 = Cake.new("Apple Cinnamon", "$39.99", "images/cake3.png", "Rich and creamy. Our famous traditional cheesecake is a crowd pleaser.")
-  cake4 = Cake.new("When Life Gives You Lemons","$39.99", "images/cake4.png", "Rich and creamy. Our famous traditional cheesecake is a crowd pleaser.")
-  cake5 = Cake.new("Fruitcake Bonanza", "$39.99", "images/cake5.png", "Rich and creamy. Our famous traditional cheesecake is a crowd pleaser.")
+  cake1 = Cake.new("Say Cheese-cake", "$39.99", "images/cake1.png", "Our pictureque traditional cheesecake is a favorite crowd pleaser.")
+  cake2 = Cake.new("Cookies and Cream", "$39.99", "images/cake2.png", "You favorite cookie in cheesecake form!")
+  cake3 = Cake.new("Apple Cinnamon", "$39.99", "images/cake3.png", "It's got apples, so it's healthy.")
+  cake4 = Cake.new("When Life Gives You Lemons","$39.99", "images/cake4.png", "K Lemon O P. Tart and Delicious. ")
+  cake5 = Cake.new("Fruitcake Bonanza", "$39.99", "images/cake5.png", "Our cheesecake infused with tropical flavors and topped with fresh fruits.")
   erb :cakes
 end

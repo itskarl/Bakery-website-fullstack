@@ -11,13 +11,13 @@ btn.onclick = function() {
     document.getElementById('btn2').classList.remove('invis');
     document.getElementById('btn2').classList.add('animated');
     document.getElementById('btn2').classList.add('bounceInDown');
-  }, 500);
+  }, 200);
 
   setTimeout(function() {
     document.getElementById('btn3').classList.remove('invis');
     document.getElementById('btn3').classList.add('animated');
     document.getElementById('btn3').classList.add('bounceInDown');
-  }, 1000);
+  }, 400);
 
 }
 
@@ -38,6 +38,5 @@ window.onclick = function(event) {
     document.getElementById('btn3').classList.remove('bounceInDown');
 
   }
-
 
 }

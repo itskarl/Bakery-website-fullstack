@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 0;
   color: rgb(62, 45, 33);
-  background: linear-gradient( rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('images/bricks.jpg');
+  background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('images/bricks.jpg');
   background-position: left;
   background-attachment: fixed;
   background-size: cover;
@@ -139,7 +139,7 @@ MODAL */
 .productbtn {
   width: 150px;
   border-radius: 50%;
-  background-color: rgba(233, 240, 176, 0.9);
+  background-color: rgba(242, 159, 174, 0.7);
   height: 150px;
   display: flex;
   align-items: center;
@@ -164,18 +164,6 @@ MODAL */
   padding: 20px;
 }
 
-button {
-  height: 30px;
-  background-color: rgba(130, 242, 121, .5);
-  border-style: none;
-  border-radius: 5px;
-  color: white;
-  font-size: 1em;
-}
-
-button:hover {
-  background-color: rgba(130, 242, 121, .9);
-}
 
 .eventgrid {
   display: grid;

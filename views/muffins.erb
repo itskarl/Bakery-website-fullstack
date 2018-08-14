@@ -1,0 +1,17 @@
+<container class="productgrid">
+
+
+    <% $muffins.each do |i| %>
+      <div>
+        <h2>
+          <img src="<%= i.img %>"> <br>
+          <p><%= i.name %></p>
+          <p><%= i.price %></p>
+          <p><%= i.description %></p>
+          <br>
+        </h2>
+
+      </div>
+    <% end %>
+
+</container>
