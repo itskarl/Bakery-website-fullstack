@@ -1,0 +1,20 @@
+
+<p> Find us at many of the NYC baking events! </p>
+<% @req['events'].each do |i| %>
+  <div class="row">
+    <div class="eventinnergrid">
+      <div>
+        <img src="<%= i['logo']['url'] %>">
+      </div>
+      <div>
+        <h2><%= i['name']['text'] %></h2>
+
+        <hr>
+        <p>
+          <a href="<%= i['url'] %>">JOIN</a>
+        </p>
+        <p class="descriptions"><%= i['description']['text']%></p>
+      </div>
+    </div>
+  </div>
+<% end %>

@@ -1,41 +1,22 @@
+<div class="row">
+  <div class="maincontent">
+    <div class="leftstuff">
 
-
-
-
-
-    <div class="row">
-      <div class="maincontent">
-        <div class="leftstuff">
-
-          <div class="board">
-              We're Open!
-          </div>
-        </div>
-        <div class="right">
-          <p> Welcome to a A Friend in Knead, New York's hottest bakery. We've got everything. </p>
-          <p> We're at every New York City local events, so stop by and say hello!. Find one near you!</p>
-
-          <div class="eventgrid">
-
-
-          <% @req['events'].each do |i| %>
-            <div>
-
-                <img src="<%= i['logo']['url'] %>"> <br>
-                <h2><%= i['name']['text'] %>
-
-                <br>
-
-              <p><a href="<%= i['url'] %>">JOIN</a></p>
-              <%= i['description']['text']%>
-            </div>
-          <% end %>
-
-        </div>
-
-        </div>
-
-
-
+      <div class="board">
+        <div>
+        <h2>We're Open!</h2>
+        <p>&nbsp;<i class="fas fa-phone"></i>&nbsp;212-479-7990<br>
+        <i class="fas fa-map-marker-alt"></i>&nbsp;90 John Street</p>
+      </div>
       </div>
     </div>
+    <div class="right">
+      <p>
+        Welcome to a A Friend in Knead, New York's hottest bakery. We've got everything! Bread that rises itself,
+      </p>
+
+
+    </div>
+
+  </div>
+</div>

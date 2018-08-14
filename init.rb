@@ -4,8 +4,6 @@ require 'json'
 
 
 get '/' do
- @data = Curl::Easy.perform("https://www.eventbriteapi.com/v3/events/search/?q=baking&sort_by=date&location.address=new+york+city&token=FGTPMLNV7K6MQVZZCC6S")
- @req = JSON.parse(@data.body_str)
  erb :index
 end
 
@@ -23,6 +21,12 @@ get '/contact' do
   erb :contact
 end
 
+get '/events' do
+  @data = Curl::Easy.perform("https://www.eventbriteapi.com/v3/events/search/?q=baking&sort_by=best&location.address=new+york+city&token=FGTPMLNV7K6MQVZZCC6S")
+  @req = JSON.parse(@data.body_str)
+  erb :events
+end
+
 get '/muffins' do
   $muffins = []
   class Muffin
@@ -37,11 +41,11 @@ get '/muffins' do
   end
 
   muffin1 = Muffin.new("It Ain't Easy Being Green", "$7.99", "images/muffin1.png", "Our pitaschio-flavored will turn heads and tastebuds.")
-  muffin2 = Muffin.new("Oatmeal", "$7.99", "images/muffin2.png", "Don't its simple exterior fool you. This packs a flavor kick in each bite!")
-  muffin3 = Muffin.new("Double Chocolate", "$7.99", "images/muffin3.png", "For our chocoholics.")
-  muffin4 = Muffin.new("Carrot","$7.99", "images/muffin4.png", "We can even make vegetables taste good.")
+  muffin2 = Muffin.new("Muffin Will Stop Me", "$7.99", "images/muffin2.png", "Don't its simple exterior fool you. This packs a flavor kick in each bite!")
+  muffin3 = Muffin.new("I Miss You a Choco-lot", "$7.99", "images/muffin3.png", "For our chocoholics.")
+  muffin4 = Muffin.new("Remain Calm and Carrot On","$7.99", "images/muffin4.png", "We can even make vegetables taste good.")
   muffin5 = Muffin.new("Peanut Butter", "$7.99", "images/muffin5.png", "Goes great with jelly!")
-  muffin6 = Muffin.new("Corn", "$7.99", "images/muffin6.png", "Like a bowl of cereal in each bite!")
+  muffin6 = Muffin.new("Muffin At All", "$7.99", "images/muffin6.png", "A corn-flavored muffin thats tastes like a bowl of cereal in each bite!")
 
   erb :muffins
 end
@@ -60,9 +64,9 @@ get '/cookies' do
   end
 
   cookie1 = Cookie.new("Better Chocolate than Never", "$5.99", "images/cookie1.png", "A classic flavor and our founder's favorite!")
-  cookie2 = Cookie.new("Double Chocolate", "$5.99", "images/cookie2.png", "Twice the chocolate. Twice the fun.")
-  cookie3 = Cookie.new("Confetti", "$5.99", "images/cookie3.png", "Enjoy the flavor of a funfetti birthday cake in a cookie!")
-  cookie4 = Cookie.new("The Last Strawberry","$5.99", "images/cookie4.png", "Satisfy your sweet tooth with one of our most popular selections")
+  cookie2 = Cookie.new("Doub Chocolate Truffle Shuffle", "$5.99", "images/cookie2.png", "Twice the chocolate. Twice the fun.")
+  cookie3 = Cookie.new("Confetti, Set, Go!", "$5.99", "images/cookie3.png", "Enjoy the flavor of a funfetti birthday cake in a cookie!")
+  cookie4 = Cookie.new("The Last Straw-berry","$5.99", "images/cookie4.png", "Satisfy your sweet tooth with one of our most popular selections")
   cookie5 = Cookie.new("You Butter Believe", "$5.99", "images/cookie5.png", "Indulge in our rich and chewy butter cookies. It doesn't get butter than this!")
   erb :cookies
 end

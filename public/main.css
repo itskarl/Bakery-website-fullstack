@@ -3,17 +3,22 @@ html {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
   margin: 0;
   padding: 0;
-  color: rgb(62, 45, 33);
-  background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('images/bricks.jpg');
+  background: linear-gradient(  rgba(160, 218, 179, 0.6), rgba(211, 86, 149,.7) ), url('images/back1.jpg');
   background-position: left;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
+  text-decoration: none;
+  color: white;
 }
 
 footer {
@@ -36,8 +41,8 @@ footer {
 
 .menubar div {
   width: 150px;
-  background-color: pink;
-  height: 80px;
+  background: linear-gradient( rgb(242, 159, 174), rgb(238, 190, 198));
+  height: 50px;
   border-radius: 0 0 150px 150px;
   display: flex;
   justify-content: center;
@@ -45,18 +50,18 @@ footer {
   padding: 0 0 20px 0;
   border-style: solid;
   border-width: 20px 0 0 0;
-  border-color: rgb(242, 159, 174);
+  border-color: rgb(190, 123, 136);
   box-shadow: 0px 5px 0px rgba(0, 0, 0, .3);
   transition-duration: .5s;
 }
 
 .odd {
-  border-color: rgb(211, 86, 149) !important;
-  background-color: hotpink !important;
+  border-color: rgb(161, 65, 113) !important;
+  background: linear-gradient( rgb(211, 86, 149), rgb(168, 65, 117)) !important;
 }
 
 .menubar div:hover {
-  height: 100px;
+  height: 80px;
   transition-duration: .5s;
   text-decoration: overline;
   color: rgb(255, 254, 142);
@@ -69,13 +74,14 @@ footer {
 }
 
 .shopname {
-  margin-top: 80px;
-  color: hotpink;
+  margin-top: 50px;
+  color: rgb(255, 251, 181);
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
   font-size: 1.6em;
   font-family: 'Lobster', cursive;
-  height: 3.6em;
+  height: 100px;
+  text-shadow: 0px 2px 0px rgba(0, 0, 0, .6);
 }
 
 .allcontent {
@@ -92,25 +98,42 @@ footer {
 
 .footer {
   height: 50px;
-  background-color: hotpink;
+  background-color: #83dbe0;
+  box-shadow: 0px -2px 5px black;
 }
 
 .board {
   background: url('images/board.png');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
   transform: rotate(-8deg);
-  font-family: 'Fredericka the Great', cursive;
+  font-family: 'Love Ya Like A Sister', cursive;
   font-size: 1.8em;
-  width: 360px;
-  height: 240px;
+  width: 30vw;
+  height: auto;
   color: ivory;
   padding: 30px;
-  padding: 0 20px 20px 20px;
-  box-sizing: border-box
+  padding-top: 55%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.board div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content : center;
+  font-size: 2vw;
+  line-height: 0%;
 }
 
 /*
@@ -133,19 +156,28 @@ MODAL */
   width: 150px;
   position: absolute;
   right: 150px;
-  top: 130px;
+  top: 100px;
 }
 
 .productbtn {
   width: 150px;
-  border-radius: 50%;
-  background-color: rgba(242, 159, 174, 0.7);
+  border-radius: 0 0 150px 150px;
+  background: linear-gradient(transparent, rgba(242, 159, 174, .7), rgba(242, 159, 174, 1));
   height: 150px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 10px
+  margin-top: -50px;
+  box-shadow: 0px 5px 0px rgba(0, 0, 0, .3);
+  color: white;
+
 }
+.productbtn:hover {
+  text-decoration: overline;
+  color: rgb(255, 254, 142);
+}
+
 
 .productgrid {
   display: grid;
@@ -164,32 +196,51 @@ MODAL */
   padding: 20px;
 }
 
-
-.eventgrid {
-  display: grid;
-  grid-template-columns: auto auto;
-  padding: 20px;
-  grid-gap: 12px;
-  width: 100%;
-  box-sizing: border-box;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  height: 500px;
-  max-height: 70%;
-  border-top-style: solid;
-  border-top-color: rgb(242, 159, 174);
-  border-top-width: 5px;
-  border-bottom-style: solid;
-  border-bottom-color: rgb(242, 159, 174);
-  border-bottom-width: 5px;
-}
-
 .eventgrid div {
   max-width: 500px;
 }
 
-.eventgrid img {}
+.eventinnergrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border-top-style: solid;
+  border-top-color: rgb(242, 159, 174);
+  border-top-width: 5px;
+}
+
+.eventinnergrid div {
+  box-sizing: border-box;
+  padding: 10px 0 10px 0;
+  color: white;
+}
 
 .invis {
-opacity: 0
+  opacity: 0
+}
+
+.descriptions {
+  font-size: .5em;
+}
+
+hr {
+  height: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(242, 159, 174);
+  color: rgb(242, 159, 174);
+  border: 0 none;
+}
+
+.right {
+  background-color: rgba(80, 117, 152, 0.64);
+  color: white;
+  padding: 20px;
+
+}
+
+.eventinnergrid h2 {
+  text-align: right;
 }
