@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100|Love+Ya+Like+A+Sister|Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100|Amatic+SC|Lobster" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 
@@ -43,11 +43,11 @@
       <div class="odd">
         <p></p>
       </div>
-        <a href="/">
-      <div class="even">
-        <p>HOME</p>
-      </div>
-        </a>
+      <a href="/">
+        <div class="even">
+          <p>HOME</p>
+        </div>
+      </a>
       <a href="/events">
         <div class="odd">
           <p>EVENTS
@@ -61,7 +61,7 @@
       </a>
       <a>
         <div class="odd" id="myBtn">
-          <p>PRODUCTS</p>
+          <p>THE GOODS!</p>
         </div>
       </a>
       <a href="/contact">
@@ -75,37 +75,47 @@
 
     <div id="myModal" class="modal">
       <div class="modal-content">
-          <div class="productlinks">
-            <a href="/cakes"><div class="productbtn invis"  id="btn1">
-               <p>CAKES </p> </i>
-            </div></a>
-            <a href="/cookies"><div class="productbtn invis" id="btn2">
-              COOKIES  </i>
-            </div></a>
-            <a href="/muffins"><div class="productbtn invis" id="btn3">
-              MUFFINS
-            </div></a>
+        <div class="productlinks">
+          <a href="/cakes">
+            <div class="productbtn invis" id="btn1">
+              <p>CAKES
+              </p>
+            </i>
           </div>
-        </p>
-      </div>
-    </div>
-
-    <div class="allcontent">
-
-      <div class="row">
-        <div class="shopname animated fadeInUp">
-          <h1>
-            These Cakes Dough Bakery
-          </h1>
+        </a>
+        <a href="/cookies">
+          <div class="productbtn invis" id="btn2">
+            COOKIES
+          </i>
         </div>
-      </div>
-
-      <%= yield%>
-
+      </a>
+      <a href="/muffins">
+        <div class="productbtn invis" id="btn3">
+          MUFFINS
+        </div>
+      </a>
     </div>
+  </p>
+</div>
+</div>
 
-    <footer class="footer">FOOTER</footer>
-    <script src="javascript.js"></script>
-  </body>
+<div class="allcontent">
+
+<div class="row">
+  <div class="shopname animated flipInX">
+    <h1>
+      These Cakes Dough Bakery
+    </h1>
+  </div>
+</div>
+
+<%= yield%>
+
+</div>
+
+<footer class="footer"></footer>
+<script src="javascript.js"></script>
+
+</body>
 
 </html>

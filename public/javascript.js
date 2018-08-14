@@ -1,3 +1,5 @@
+// all this for product menu?
+
 var modal = document.getElementById('myModal');
 var btn = document.getElementById("myBtn");
 
@@ -40,3 +42,24 @@ window.onclick = function(event) {
   }
 
 }
+
+
+
+//this is for the 'about' slideshow
+
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 2000);
+}
+
+//this is the google maps API

@@ -1,17 +1,21 @@
 <container class="productgrid">
 
+  <% $cakes.each do |i| %>
+    <div class="pastryinnergrid">
 
-    <% $cakes.each do |i| %>
-      <div>
-        <h2>
-          <img src="<%= i.img %>"> <br>
-          <p><%= i.name %></p>
-          <p><%= i.price %></p>
-          <p><%= i.description %></p>
-          <br>
+      <div class="pastryimg">
+        <img src="<%= i.img %>">
+        <br>
+      </div>
+      <div class="pastryinfo">
+        <h2><%= i.name %>
         </h2>
+        <p><%= i.price %></p>
+        <p><%= i.description %></p>
 
       </div>
-    <% end %>
+
+    </div>
+  <% end %>
 
 </container>

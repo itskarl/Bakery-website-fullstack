@@ -5,13 +5,18 @@ html {
 
 a {
   text-decoration: none;
+  color: rgb(255, 251, 181);
+}
+
+a:visited {
+  color: rgb(170, 200, 70);
 }
 
 body {
   font-family: 'Raleway', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(  rgba(160, 218, 179, 0.6), rgba(211, 86, 149,.7) ), url('images/back1.jpg');
+  background: linear-gradient( rgba(79, 22, 51, 0.86), rgba(0, 0, 0, 0.6)), url('images/back1.jpg');
   background-position: left;
   background-attachment: fixed;
   background-size: cover;
@@ -73,6 +78,13 @@ footer {
   width: 100%;
 }
 
+.eventrow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  grid-gap: 10px;
+}
+
 .shopname {
   margin-top: 50px;
   color: rgb(255, 251, 181);
@@ -82,6 +94,7 @@ footer {
   font-family: 'Lobster', cursive;
   height: 100px;
   text-shadow: 0px 2px 0px rgba(0, 0, 0, .6);
+  padding-bottom: 5px;
 }
 
 .allcontent {
@@ -98,7 +111,7 @@ footer {
 
 .footer {
   height: 50px;
-  background-color: #83dbe0;
+  background-color: rgba(101, 148, 209, .9);
   box-shadow: 0px -2px 5px black;
 }
 
@@ -110,7 +123,7 @@ footer {
   align-items: center;
   justify-content: center;
   transform: rotate(-8deg);
-  font-family: 'Love Ya Like A Sister', cursive;
+  font-family: 'Amatic SC', monospace;
   font-size: 1.8em;
   width: 30vw;
   height: auto;
@@ -131,9 +144,13 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content : center;
+  justify-content: center;
   font-size: 2vw;
-  line-height: 0%;
+  line-height: 80%;
+}
+
+.board h2 {
+  margin-bottom: -.5vh;
 }
 
 /*
@@ -171,29 +188,42 @@ MODAL */
   margin-top: -50px;
   box-shadow: 0px 5px 0px rgba(0, 0, 0, .3);
   color: white;
-
 }
+
 .productbtn:hover {
   text-decoration: overline;
   color: rgb(255, 254, 142);
 }
 
-
 .productgrid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.pastryinfo {
+  background:  radial-gradient(rgba(250, 209, 107, 0.64), rgba(240, 144, 121, 0.54));
+  padding: 10px;
+  border-radius: 0 20px 5px 0
+}
+
+.pastryinfo h2 {
+  color: rgb(204, 255, 163)
+}
+
+.pastryimg {
+  background: radial-gradient(rgba(250, 209, 107, 0.64), rgba(240, 144, 121, 0.54));
+  border-radius: 5px 0 0 20px;
 }
 
 .productgrid img {
   width: 100%;
-  border-style: dashed;
-  border-color: white;
-  border-width: 8px;
 }
 
-.productgrid div {
-  margin: 20px;
-  padding: 20px;
+.pastryinnergrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 5px;
+  padding: 5px;
 }
 
 .eventgrid div {
@@ -203,18 +233,37 @@ MODAL */
 .eventinnergrid {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-gap: 10px;
   width: 100%;
   box-sizing: border-box;
-  border-top-style: solid;
-  border-top-color: rgb(242, 159, 174);
-  border-top-width: 5px;
+  line-height: 1em;
+  box-shadow: 0 0 5px black;
 }
 
 .eventinnergrid div {
   box-sizing: border-box;
-  padding: 10px 0 10px 0;
   color: white;
+  box-sizing: border-box;
+}
+
+.eventinfo {
+  box-sizing: border-box;
+  background-color: rgba(93, 146, 201, .8);
+  padding: 10px 25px 10px 25px !important;
+  color: white;
+
+}
+
+.eventimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden
+}
+
+.eventinnergrid img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%
 }
 
 .invis {
@@ -222,25 +271,60 @@ MODAL */
 }
 
 .descriptions {
-  font-size: .5em;
+  font-size: 1em;
 }
 
 hr {
-  height: 3px;
+  height: 2px;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgb(242, 159, 174);
+  background-color: #83dbe0;
   color: rgb(242, 159, 174);
   border: 0 none;
 }
 
 .right {
-  background-color: rgba(80, 117, 152, 0.64);
+
   color: white;
   padding: 20px;
-
 }
 
 .eventinnergrid h2 {
+  text-align: right;
+  line-height: 1em;
+}
+
+.join {
+  text-align: right;
+  color: white;
+}
+
+.gallerydiv img {
+
+  width: 100%;
+}
+
+.gallerycontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 0 0 10px black;
+}
+
+.gallerydeets {
+  padding: 40px;
+  background-color: rgba(255,255,255, 0.67);
+  color: rgb(142, 45, 45);
+  font-size: 1.3em
+}
+
+.contactdiv {
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: flex-start;
+}
+
+.contactdeets {
+  padding: 0 20px 0 0;
   text-align: right;
 }
