@@ -1,0 +1,21 @@
+<%= month = i['start']['local'].byteslice(5..6)
+case month
+when month == "01"
+  puts Jan
+when month == "02"
+  puts Feb
+when month == "03"
+  puts Mar
+when month == "04"
+  puts Apr
+when month == "05"
+  puts May
+when month == "06"
+  puts Jun
+when month == "07"
+  puts Jul
+when month == "08"
+  puts Aug
+when month == "09"
+  puts Sep
+%>

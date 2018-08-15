@@ -63,6 +63,8 @@ footer {
 .odd {
   border-color: rgb(161, 65, 113) !important;
   background: linear-gradient( rgb(211, 86, 149), rgb(168, 65, 117)) !important;
+  position: relative;
+  z-index: 5;
 }
 
 .menubar div:hover {
@@ -179,7 +181,7 @@ MODAL */
 .productbtn {
   width: 150px;
   border-radius: 0 0 150px 150px;
-  background: linear-gradient(transparent, rgba(242, 159, 174, .7), rgba(242, 159, 174, 1));
+  background: linear-gradient(transparent, rgba(242, 159, 174), rgba(242, 159, 174, 1));
   height: 150px;
   display: flex;
   flex-direction: column;
@@ -201,19 +203,19 @@ MODAL */
 }
 
 .pastryinfo {
-  background:  radial-gradient(rgba(250, 209, 107, 0.64), rgba(240, 144, 121, 0.54));
+  background-color: rgba(240, 144, 121, 0.64);
   padding: 10px;
   border-radius: 0 20px 5px 0
+}
+.pastryimg {
+  background-color: rgba(240, 144, 121, 0.64);
+  border-radius: 5px 0 0 20px;
 }
 
 .pastryinfo h2 {
   color: rgb(204, 255, 163)
 }
 
-.pastryimg {
-  background: radial-gradient(rgba(250, 209, 107, 0.64), rgba(240, 144, 121, 0.54));
-  border-radius: 5px 0 0 20px;
-}
 
 .productgrid img {
   width: 100%;
@@ -242,7 +244,6 @@ MODAL */
 .eventinnergrid div {
   box-sizing: border-box;
   color: white;
-  box-sizing: border-box;
 }
 
 .eventinfo {
@@ -250,7 +251,6 @@ MODAL */
   background-color: rgba(93, 146, 201, .8);
   padding: 10px 25px 10px 25px !important;
   color: white;
-
 }
 
 .eventimg {
@@ -284,7 +284,6 @@ hr {
 }
 
 .right {
-
   color: white;
   padding: 20px;
 }
@@ -299,10 +298,21 @@ hr {
   color: white;
 }
 
-.gallerydiv img {
-
-  width: 100%;
+.gallerydiv {
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.gallerydiv img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
 
 .gallerycontainer {
   display: grid;
@@ -311,20 +321,112 @@ hr {
 }
 
 .gallerydeets {
-  padding: 40px;
-  background-color: rgba(255,255,255, 0.67);
-  color: rgb(142, 45, 45);
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
   font-size: 1.3em
 }
 
 .contactdiv {
-display: flex;
-flex-direction: row;
-justify-content: flex-end;
-align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 
 .contactdeets {
   padding: 0 20px 0 0;
   text-align: right;
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: .8em;
+    padding: 0px
+  }
+  .menubar div {
+    width: 60px;
+    height: 20px;
+    border-radius: 0 0 90px 90px;
+    font-size: .8em;
+  }
+  .productbtn {
+    width: 60px;
+    border-radius: 60px;
+    background-color: pink;
+    height: 60px;
+    margin-top: 0px;
+    font-size: .8em;
+  }
+  .menubar div:hover {
+    height: 40px;
+    transition-duration: .5s;
+  }
+  #myBtn {
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  .modal-content {
+    right: -30px;
+    top: 80px;
+  }
+  .maincontent {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .board {
+    width: 80vw;
+  }
+  .shopname {
+    font-size: 2em;
+    justify-content: center;
+    margin-bottom: -70px;
+  }
+  .shopname h1 {
+    display: none;
+  }
+  .shopname:after {
+    content: "TCD Bakery"
+  }
+  .board div {
+    font-size: 6vw;
+  }
+  .productgrid {
+    grid-template-columns: 1fr;
+  }
+  .eventrow {
+    grid-template-columns: 1fr;
+  }
+  .contactdiv {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactdeets {
+    text-align: center;
+  }
+  .gallerycontainer {
+    grid-template-columns: 1fr;
+  }
+  .map {
+    width: 320px;
+    display: flex;
+  }
+  .eventinnergrid {
+    grid-template-columns: 1fr;
+  }
+  .pastryinnergrid {
+    grid-template-columns: 1fr;
+  }
+  .pastryimg {
+    border-radius: 0 0 0 0;
+  }
+  .pastryinfo {
+    border-radius: 0 0 0 0;
+  }
+
+  .gallerydiv {
+    height: 400px;
+  }
 }

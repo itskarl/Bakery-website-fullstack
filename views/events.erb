@@ -1,40 +1,42 @@
 <p style="text-align: right;">We love joining the baking community! Find us at many of the NYC baking events!
 </p>
-  <div class="eventrow">
-<% @req['events'].each do |i| %>
-<!--
-THIS CODE ELMINATES PAST EVENTS!  -->
-<% unless i['start']['local'].byteslice(5..6).to_i < 8 && i['start']['local'].byteslice(0..3) == "2018" %>
+<div class="eventrow">
+  <% @req['events'].each do |i| %>
+    <!-- THIS CODE ELMINATES PAST EVENTS! -->
+    <% unless i['start']['local'].byteslice(5..6).to_i < 8 && i['start']['local'].byteslice(0..3) == "2018" %>
 
-    <div class="eventinnergrid">
-      <div class="eventimg">
-        <img src="<%= i['logo']['url'] %>">
+      <div class="eventinnergrid">
+        <div class="eventimg">
+          <img src="<%= i['logo']['url'] %>">
+        </div>
+        <div class="eventinfo">
+          <h2><%= i['name']['text'] %></h2>
+
+          <hr>
+          <p class="join">
+            <a href="<%= i['url'] %>">
+              <i class="fas fa-user-plus"></i>
+              &nbsp;JOIN
+
+            </a>
+          </p>
+          <p class="descriptions"><%= i['description']['text'].byteslice(0..200) %>
+            &nbsp;...
+            <a href="<%= i['url'] %>">more</a>
+          </p>
+          <p class="descriptions">
+            <b>DATE:</b>
+
+            <%= i['start']['local'].byteslice(5..6)%>
+            |
+            <%= i['start']['local'].byteslice(8..9)%>
+            |
+            <%= i['start']['local'].byteslice(0..3)%>
+
+          </p>
+        </div>
       </div>
-      <div class="eventinfo">
-        <h2><%= i['name']['text'] %></h2>
 
-        <hr>
-        <p class="join">
-          <a href="<%= i['url'] %>">JOIN &nbsp;
-            <i class="fas fa-user-plus"></i>
-          </a>
-        </p>
-        <p class="descriptions"><%= i['description']['text'].byteslice(0..200) %>
-          &nbsp;...
-          <a href="<%= i['url'] %>">more</a>
-        </p>
-        <p class="descriptions"><b>DATE:</b>
-
-        <%= i['start']['local'].byteslice(5..6)%> |
-        <%= i['start']['local'].byteslice(8..9)%> |
-        <%= i['start']['local'].byteslice(0..3)%>
-
-
-
-      </p>
-      </div>
-    </div>
-
-<% end %>
-<% end %>
+    <% end %>
+  <% end %>
 </div>
