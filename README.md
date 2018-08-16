@@ -1,17 +1,18 @@
 # FULL STACK BAKERY PROJECT
 
-![image](site.gif)
-
+![sitegif](site.gif)
 
 ### DESCRIPTION
-This site is my first full-stack site. This site operates on Ruby on Sinatra.
+This my first full-stack website. An exercise building Ruby on Sinatra.
+For this site, I had to create a website for a client to help her bakery business. I had to highlight the products and provide information on the business.
+This site was also an opportunity to employ API calls to the eventbrite website.
 
 ### DESIGN
-Pastel colors, the awning navigation bar are all to emulate the feel of a local cafe. 
+I wanted this site to be reminiscent of a local cafe bakery.
+I used "awning" tabs for the navigation bar, and bright pastel colors to create this effect.
 
 ### LANGUAGES USED
 HTML, CSS, JAVSASCRIPT, SASS, RUBY, Sinatra
-
 
 ### RESOURCES
 
