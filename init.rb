@@ -40,11 +40,11 @@ get '/muffins' do
     end
   end
 
-  muffin1 = Muffin.new("It Ain't Easy Being Green", "$7.99", "images/muffin1.png", "Our pitaschio-flavored will turn heads and tastebuds.")
-  muffin2 = Muffin.new("Muffin Will Stop Me", "$7.99", "images/muffin2.png", "Don't let its simple exterior fool you. This packs a flavor kick in each bite!")
-  muffin3 = Muffin.new("I Miss You a Choco-lot", "$7.99", "images/muffin3.png", "For our chocoholics.")
-  muffin4 = Muffin.new("Remain Calm and Carrot On","$7.99", "images/muffin4.png", "We can even make vegetables taste good.")
-  muffin5 = Muffin.new("It Gets (Peanut) Butter", "$7.99", "images/muffin5.png", "Goes great with jelly!")
+  muffin1 = Muffin.new("It Ain't Easy Being Green", "$5.99", "images/muffin1.png", "Woul you eat it in a box? Would you eat it with a fox? Our pistachio-flavored muffin is a crowd favorite.")
+  muffin2 = Muffin.new("Muffin Will Stop Me", "$5.99", "images/muffin2.png", "Don't let its simple exterior fool you. This packs kick of blueberry in each bite!")
+  muffin3 = Muffin.new("I Miss You a Choco-lot", "$5.99", "images/muffin3.png", "For our chocoholics.")
+  muffin4 = Muffin.new("Remain Calm and Carrot On","$5.99", "images/muffin4.png", "We can even make vegetables taste good.")
+  muffin5 = Muffin.new("It Gets (Peanut) Butter", "$5.99", "images/muffin5.png", "Goes great with jelly!")
   muffin6 = Muffin.new("Muffin At All", "$7.99", "images/muffin6.png", "A corn-flavored muffin thats tastes like a bowl of cereal in each bite!")
 
   erb :muffins
@@ -63,11 +63,11 @@ get '/cookies' do
     end
   end
 
-  cookie1 = Cookie.new("Better Chocolate than Never", "$5.99", "images/cookie1.png", "A classic flavor that never goes out of style!")
-  cookie2 = Cookie.new("Fudge is Life", "$5.99", "images/cookie2.png", "Fudge on chocolate. Twice the chocolate. Twice the fun.")
-  cookie3 = Cookie.new("Confetti, Set, Go!", "$5.99", "images/cookie3.png", "Enjoy the flavor of a funfetti birthday cake in a cookie!")
-  cookie4 = Cookie.new("The Last Straw-berry","$5.99", "images/cookie4.png", "Satisfy your sweet tooth with this strawberry-flavored cookie.")
-  cookie5 = Cookie.new("You Butter Believe", "$5.99", "images/cookie5.png", "Indulge in our rich and chewy butter cookies. It doesn't get butter than this!")
+  cookie1 = Cookie.new("Better Chocolate than Never", "$3.99", "images/cookie1.png", "Forget the chocolate chip. This has chocolate throughout!")
+  cookie2 = Cookie.new("Fudge is Life", "$3.99", "images/cookie2.png", "Fudge on chocolate. Twice the chocolate. Twice the fun.")
+  cookie3 = Cookie.new("Confetti, Set, Go!", "$3.99", "images/cookie3.png", "Gonna party like it's your birthday! Funfetti-flavored cookie!")
+  cookie4 = Cookie.new("The Last Straw-berry","$3.99", "images/cookie4.png", "Satisfy your sweet tooth with this strawberry-flavored cookie.")
+  cookie3 = Cookie.new("You Butter Believe", "$3.99", "images/cookie5.png", "Indulge in this rich and chewy butter cookies. It doesn't get butter than this!")
   erb :cookies
 end
 

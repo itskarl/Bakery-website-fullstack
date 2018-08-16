@@ -203,12 +203,12 @@ MODAL */
 }
 
 .pastryinfo {
-  background-color: rgba(240, 144, 121, 0.64);
+  background-color: rgba(181, 132, 121, 0.74);
   padding: 10px;
   border-radius: 0 20px 5px 0
 }
 .pastryimg {
-  background-color: rgba(240, 144, 121, 0.64);
+  background-color: rgba(168, 100, 84, 0.74);
   border-radius: 5px 0 0 20px;
 }
 
@@ -304,6 +304,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-height: 100vh;
 }
 
 .gallerydiv img {
@@ -311,8 +312,6 @@ hr {
   min-width: 100%;
   min-height: 100%;
 }
-
-
 
 .gallerycontainer {
   display: grid;
@@ -339,7 +338,12 @@ hr {
   text-align: right;
 }
 
-@media (max-width: 640px) {
+
+
+/*
+RESPONSIVE DESIGN!!!!!!! */
+
+@media screen and (max-width: 640px) {
   body {
     font-size: .8em;
     padding: 0px
@@ -387,7 +391,7 @@ hr {
     display: none;
   }
   .shopname:after {
-    content: "TCD Bakery"
+    content: "A Friend in Need"
   }
   .board div {
     font-size: 6vw;
