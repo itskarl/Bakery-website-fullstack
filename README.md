@@ -3,7 +3,7 @@
 ![sitegif](site.gif)
 
 ### DESCRIPTION
-This my first full-stack website. An exercise building Ruby on Sinatra.
+This my first full-stack website. An exercise building Ruby on Sinatra. Utilizes CSS, JS, HTML, Ruby, Sinatra. 
 For this site, I had to create a website for a client to help her bakery business. I had to highlight the products and provide information on the business.
 This site was also an opportunity to employ API calls to the eventbrite website.
 
