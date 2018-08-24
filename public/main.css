@@ -367,10 +367,12 @@ RESPONSIVE DESIGN!!!!!!! */
     transition-duration: .5s;
   }
   .menubar div {
+    background-color:  rgb(242, 159, 174);
     border-color: rgb(242, 159, 174);
   }
   .odd {
     border-color: rgb(211, 86, 149) !important;
+    background-color: rgb(211, 86, 149) !important;
   }
   #myBtn {
     text-align: center;
