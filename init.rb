@@ -2,7 +2,6 @@ require 'sinatra'
 require 'curb'
 require 'json'
 
-
 get '/' do
  erb :index
 end
@@ -11,7 +10,6 @@ post '/results' do
   @seach = params[:query]
  erb :results
 end
-
 
 get '/about' do
   erb :about

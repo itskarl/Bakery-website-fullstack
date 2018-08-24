@@ -366,6 +366,12 @@ RESPONSIVE DESIGN!!!!!!! */
     height: 40px;
     transition-duration: .5s;
   }
+  .menubar div {
+    border-color: rgb(242, 159, 174);
+  }
+  .odd {
+    border-color: rgb(211, 86, 149) !important;
+  }
   #myBtn {
     text-align: center;
     display: flex;
@@ -383,7 +389,7 @@ RESPONSIVE DESIGN!!!!!!! */
     width: 80vw;
   }
   .shopname {
-    font-size: 2em;
+    font-size: 1.3em;
     justify-content: center;
     margin-bottom: -70px;
   }
