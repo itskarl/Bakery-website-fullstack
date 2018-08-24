@@ -1,15 +1,17 @@
 # FULL STACK BAKERY PROJECT
+[VISIT A FRIEND IN KNEAD](https://afriendinknead.herokuapp.com/contact)
 
 ![sitegif](site.gif)
 
 ### DESCRIPTION
-This my first full-stack website. An exercise building Ruby on Sinatra. Utilizes CSS, JS, HTML, Ruby, Sinatra, and EventbriteAPI. 
-For this site, I had to create a website for a client to help her bakery business. I had to highlight the products and provide information on the business.
-This site was also an opportunity to employ API calls to the eventbrite website.
+This is a web app for fictional bakery company A Friend in Knead, showcasing the business, their products and local events with an API.
+
+Project: Build a full stack website. an exercise building Ruby on Sinatra. Utilizes CSS, JS, HTML, Ruby, Sinatra, and EventbriteAPI.
+
 
 ### DESIGN
 I wanted this site to be reminiscent of a local cafe bakery.
-I used "awning" tabs for the navigation bar, and bright pastel colors to create this effect.
+I used awning tabs for the navigation bar, and bright, bold colors to create this effect.
 
 ### LANGUAGES USED
 HTML, CSS, JAVSASCRIPT, SASS, RUBY, Sinatra
