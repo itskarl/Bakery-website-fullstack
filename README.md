@@ -1,5 +1,5 @@
 # FULL STACK BAKERY PROJECT
-[VISIT A FRIEND IN KNEAD](https://afriendinknead.herokuapp.com/contact)
+[VISIT A FRIEND IN KNEAD](https://afriendinknead.herokuapp.com)
 
 ![sitegif](site.gif)
 
@@ -15,6 +15,7 @@ I used awning tabs for the navigation bar, and bright, bold colors to create thi
 
 ### LANGUAGES USED
 HTML, CSS, JAVSASCRIPT, SASS, RUBY, Sinatra
+Deployed on Heroku
 
 ### RESOURCES
 
