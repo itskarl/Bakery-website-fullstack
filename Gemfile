@@ -5,7 +5,4 @@ gem 'json'
 gem 'heroku'
 gem 'sinatra'
 gem 'thin'
-
-group :production do
-  gem 'pg'
-end
+gem 'curb'

@@ -1,12 +1,12 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    curb (0.9.6)
     daemons (1.2.6)
     eventmachine (1.2.7)
     heroku (3.99.3)
     json (2.1.0)
     mustermann (1.0.3)
-    pg (1.0.0)
     rack (2.0.5)
     rack-protection (2.0.3)
       rack
@@ -25,9 +25,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  curb
   heroku
   json
-  pg
   sinatra
   thin
 
