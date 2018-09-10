@@ -100,7 +100,8 @@ footer {
 }
 
 .allcontent {
-  min-height: calc(100vh - 140px);
+  height: calc(100vh - 143px);
+
   padding: 40px 40px 0 40px;
 }
 
