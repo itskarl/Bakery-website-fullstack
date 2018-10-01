@@ -2,12 +2,13 @@
 </p>
 <div class="eventrow">
   <% @req['events'].each do |i| %>
-    <!-- THIS CODE ELMINATES PAST EVENTS! -->
-    <% unless i['start']['local'].byteslice(5..6).to_i < 8 && i['start']['local'].byteslice(0..3) == "2018" %>
+
 
       <div class="eventinnergrid">
         <div class="eventimg">
-          <img src="<%= i['logo']['url'] %>">
+          <% if i['logo'] && i['logo']['url'] %>
+            <img src="<%= i['logo']['url'] %>">
+          <% end %>
         </div>
         <div class="eventinfo">
           <h2><%= i['name']['text'] %></h2>
@@ -37,6 +38,6 @@
         </div>
       </div>
 
-    <% end %>
+
   <% end %>
 </div>
