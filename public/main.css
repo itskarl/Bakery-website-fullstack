@@ -402,7 +402,7 @@ RESPONSIVE DESIGN!!!!!!! */
     content: "A Friend in Need"
   }
   .board div {
-    font-size: 6vw;
+    font-size: 16px;
   }
   .productgrid {
     grid-template-columns: 1fr;
