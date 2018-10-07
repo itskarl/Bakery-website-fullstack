@@ -186,7 +186,7 @@ MODAL */
 .productbtn {
   width: 150px;
   border-radius: 0 0 150px 150px;
-  background: linear-gradient(transparent, rgba(242, 159, 174), rgba(242, 159, 174, 1));
+  background: linear-gradient(transparent, rgb(242, 159, 174), rgba(242, 159, 174, 1));
   height: 150px;
   display: flex;
   flex-direction: column;
