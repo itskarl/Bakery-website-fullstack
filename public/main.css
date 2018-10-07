@@ -41,7 +41,7 @@ body {
 }
 
 .menubar div {
-  width: calc(100vw / 5.1);
+  width: 150px;
   max-width: 200px;
   background: linear-gradient( rgb(242, 159, 174), rgb(238, 190, 198));
   height: 50px;
@@ -355,6 +355,7 @@ RESPONSIVE DESIGN!!!!!!! */
     padding: 0px
   }
   .menubar div {
+    width: calc(100vw / 5.2);
     height: 20px;
     border-radius: 0 0 90px 90px;
     font-size: .8em;
