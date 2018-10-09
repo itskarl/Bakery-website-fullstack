@@ -361,7 +361,7 @@ RESPONSIVE DESIGN!!!!!!! */
     font-size: .8em;
   }
   .productbtn {
-    width: 60px;
+    width: auto;
     border-radius: 60px;
     background-color: pink;
     height: 60px;
