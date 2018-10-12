@@ -360,9 +360,6 @@ RESPONSIVE DESIGN!!!!!!! */
     border-radius: 0 0 90px 90px;
     font-size: .8em;
   }
-  #myBtn {
-    align-items: flex-end;
-  }
   .productbtn {
     width: auto;
     border-radius: 60px;
@@ -386,7 +383,7 @@ RESPONSIVE DESIGN!!!!!!! */
   #myBtn {
     text-align: center;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
   }
   .modal-content {
     right: -30px;
