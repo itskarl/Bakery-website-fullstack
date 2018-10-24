@@ -21,7 +21,7 @@
 
             </a>
           </p>
-          <p class="descriptions"><%= i['description']['text'].byteslice(0..200) %>
+          <p class="descriptions"><%= i['description']['text'].byteslice(0..200) if i['description']['text']%>
             &nbsp;...
             <a href="<%= i['url'] %>">more</a>
           </p>
