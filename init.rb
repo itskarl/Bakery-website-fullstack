@@ -38,8 +38,8 @@ get '/muffins' do
     end
   end
 
-  muffin1 = Muffin.new("It Ain't Easy Being Green", "$5.99", "images/muffin1.png", "Woul you eat it in a box? Would you eat it with a fox? Our pistachio-flavored muffin is a crowd favorite.")
-  muffin2 = Muffin.new("Muffin Will Stop Me", "$5.99", "images/muffin2.png", "Don't let its simple exterior fool you. This packs kick of blueberry in each bite!")
+  muffin1 = Muffin.new("It Ain't Easy Being Green", "$5.99", "images/muffin1.png", "Would you eat it in a box? Would you eat it with a fox? Our pistachio-flavored muffin is a crowd favorite.")
+  muffin2 = Muffin.new("Muffin Will Stop Me", "$5.99", "images/muffin2.png", "Don't let its simple exterior fool you. This packs a kick of blueberry in each bite!")
   muffin3 = Muffin.new("I Miss You a Choco-lot", "$5.99", "images/muffin3.png", "For our chocoholics.")
   muffin4 = Muffin.new("Remain Calm and Carrot On","$5.99", "images/muffin4.png", "We can even make vegetables taste good.")
   muffin5 = Muffin.new("It Gets (Peanut) Butter", "$5.99", "images/muffin5.png", "Goes great with jelly!")
